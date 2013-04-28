@@ -7,6 +7,7 @@ module.exports = (content) ->
 
   render_item_checkbox = (html, checked) ->
     label = html[3..html.length - 1]
+    
     """
       <label>
         <input type="checkbox"
