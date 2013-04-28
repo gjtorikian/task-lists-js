@@ -2,7 +2,7 @@
   "name": "task-lists",
   "version": "0.0.1",
   "author": "Garen J. Torikian <gjtorikian@gmail.com>",
-  "description": "An implementation of task lists",
+  "description": "An implementation of GFM task lists",
   "main": "lib/index.js",
   "preferGlobal": false,
   "repository": "git://github.com/gjtorikian/task-lists-js.git",

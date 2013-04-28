@@ -1,8 +1,8 @@
-# marked
+# Task lists
 
 - [ ] Regular uncheckbox1!
 - [ ] Regular uncheckbox2!
-- [x] Regular checkbox3!
+- [x] Regular paragraph _checkbox3_!
 
 - [c] Irregular checkbox1!
 - [] Irregular checkbox2!
@@ -12,6 +12,12 @@
   - [ ] Inline regular checkbox2!
 
 
-- [ ] uncheck
+- [ ] `uncheck`
 - [x] check
 - [ ] this is **real**ly unchecked
+
++ list
+   + list two
+      * list three
+      1. item  
+      - [ ] indent uncheck

@@ -11,20 +11,29 @@ module.exports = (content) ->
       <label>
         <input type="checkbox"
         class="task-list-item-checkbox"
-        #{checked ? 'checked="checked"' : 'checked=""'}/>
+        #{checked}/>
         #{label}
       </label>
     """
 
+  list_iterator = (item) ->
+    srcHtml = $(item).html()
+
+    list_iterator
+    if /^\[x\]/.test(srcHtml)
+      $(item).html(render_item_checkbox(srcHtml, "checked"))
+    else if /^\[ \]/.test(srcHtml)
+      $(item).html(render_item_checkbox(srcHtml, ""))
+
   listItems = $('li')
 
   for item in listItems by 1
-    srcHtml = $(item).html()
+    list_iterator(item)
 
-    if /^\[x\]/.test(srcHtml)
-      $(item).html(render_item_checkbox(srcHtml, true))
-    else if /^\[ \]/.test(srcHtml)
-      $(item).html(render_item_checkbox(srcHtml, false))
+  listItems = $('li p:first-child')
+
+  for item in listItems by 1
+    list_iterator(item)
 
   $.html()
 

@@ -1,14 +1,17 @@
-<h1>marked</h1>
+<h1>Task lists</h1>
 <ul>
 <li><label>
-  <input type="checkbox" class="task-list-item-checkbox" false="">
+  <input type="checkbox" class="task-list-item-checkbox">
    Regular uncheckbox1!
 </label></li>
 <li><label>
-  <input type="checkbox" class="task-list-item-checkbox" false="">
+  <input type="checkbox" class="task-list-item-checkbox">
    Regular uncheckbox2!
 </label></li>
-<li><p>[x] Regular checkbox3!</p>
+<li><p><label>
+  <input type="checkbox" class="task-list-item-checkbox" checked>
+   Regular paragraph <em>checkbox3</em>!
+</label></p>
 </li>
 <li><p>[c] Irregular checkbox1!</p>
 </li>
@@ -17,11 +20,11 @@
 <li><p>Blah blah blah</p>
 <ul>
 <li><label>
-  <input type="checkbox" class="task-list-item-checkbox" false="">
+  <input type="checkbox" class="task-list-item-checkbox">
    Inline regular checkbox1!
 </label></li>
 <li><label>
-  <input type="checkbox" class="task-list-item-checkbox" false="">
+  <input type="checkbox" class="task-list-item-checkbox">
    Inline regular checkbox2!
 </label></li>
 </ul>
@@ -29,15 +32,29 @@
 </ul>
 <ul>
 <li><label>
-  <input type="checkbox" class="task-list-item-checkbox" false="">
-   uncheck
+  <input type="checkbox" class="task-list-item-checkbox">
+   <code>uncheck</code>
 </label></li>
 <li><label>
-  <input type="checkbox" class="task-list-item-checkbox" true="">
+  <input type="checkbox" class="task-list-item-checkbox" checked>
    check
 </label></li>
-<li><label>
-  <input type="checkbox" class="task-list-item-checkbox" false="">
+<li><p><label>
+  <input type="checkbox" class="task-list-item-checkbox">
    this is <strong>real</strong>ly unchecked
+</label></p>
+</li>
+<li><p>list</p>
+<ul>
+<li>list two<ul>
+<li>list three</li>
+<li>item  </li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   indent uncheck
 </label></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
