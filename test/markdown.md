@@ -20,4 +20,10 @@
    + list two
       * list three
       1. item  
-      - [ ] indent uncheck
+      - [x] indent <s>un</s>check
+
+- list  
+
+   blah blah
+
+   - [ ] third paragraph

@@ -19,7 +19,6 @@ module.exports = (content) ->
   list_iterator = (item) ->
     srcHtml = $(item).html()
 
-    list_iterator
     if /^\[x\]/.test(srcHtml)
       $(item).html(render_item_checkbox(srcHtml, "checked"))
     else if /^\[ \]/.test(srcHtml)
