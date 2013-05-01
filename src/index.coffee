@@ -28,12 +28,12 @@ module.exports = (content) ->
   listItems = $('li')
 
   for item in listItems by 1
+    child = $(item).children().first()['0']
     list_iterator(item)
 
-  listItems = $('li p:first-child')
-
-  for item in listItems by 1
-    list_iterator(item)
+    if child
+      if child.name == "p"
+        list_iterator(child)
 
   $.html()
 
