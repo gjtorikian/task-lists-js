@@ -11,7 +11,6 @@ npm install task-lists
 ## Usage
 
 ```coffeescript
-require('coffee-script');
 var roaster = require("roaster");
 var taskLists = require("../src/index");
 var fs = require("fs");
