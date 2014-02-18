@@ -1,10 +1,11 @@
 {
   "name": "task-lists",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "author": "Garen J. Torikian <gjtorikian@gmail.com>",
   "description": "An implementation of GFM task lists",
   "main": "lib/index.js",
   "preferGlobal": false,
+  "license" : "MIT",
   "repository": "git://github.com/gjtorikian/task-lists-js.git",
   "homepage": "https://github.com/gjtorikian/task-lists-js",
   "bugs": { "url": "http://github.com/gjtorikian/task-lists-js/issues" },
