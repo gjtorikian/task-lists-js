@@ -11,7 +11,7 @@
   "bugs": { "url": "http://github.com/gjtorikian/task-lists-js/issues" },
 
   "dependencies" : {
-    "cheerio" : "0.11.0"
+    "cheerio" : "0.13.x"
   },
   "devDependencies": {
     "coffee-script": ">= 1.3",
