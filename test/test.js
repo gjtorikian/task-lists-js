@@ -1,4 +1,4 @@
-require('coffee-script');
+require('coffee-script').register();
 var roaster = require("roaster");
 var taskLists = require("../src/index");
 var fs = require("fs");
