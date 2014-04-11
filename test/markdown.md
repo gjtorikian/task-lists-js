@@ -26,6 +26,11 @@
       - [x] indent <s>un</s>check
 
 
+- [ ] leading checkbox
+  + list two
+  - [x] indent <s>un</s>check
+
+
 - list  
 
    blah blah
