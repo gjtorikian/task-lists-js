@@ -7,7 +7,7 @@ module.exports = (content) ->
 
   render_item_checkbox = (html, checked) ->
     label = html[3..html.length - 1]
-    
+
     """
       <label>
         <input type="checkbox"
@@ -18,12 +18,13 @@ module.exports = (content) ->
     """
 
   list_iterator = (item) ->
-    srcHtml = $(item).html()
+    srcHtml = $(item).clone().children().remove('il, ul').end().html()
+    detached = $(item).children('il, ul')
 
     if /^\[x\]/.test(srcHtml)
-      $(item).html(render_item_checkbox(srcHtml, "checked"))
+      $(item).html(render_item_checkbox(srcHtml, "checked")).append(detached)
     else if /^\[ \]/.test(srcHtml)
-      $(item).html(render_item_checkbox(srcHtml, ""))
+      $(item).html(render_item_checkbox(srcHtml, "")).append(detached)
 
   listItems = $('li')
 
@@ -36,4 +37,3 @@ module.exports = (content) ->
         list_iterator(child)
 
   $.html()
-
