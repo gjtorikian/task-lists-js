@@ -22,7 +22,7 @@
 + list
    + list two
       * list three
-      1. item  
+      1. item
       - [x] indent <s>un</s>check
 
 
