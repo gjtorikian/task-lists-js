@@ -1,6 +1,6 @@
 {
   "name": "task-lists",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "author": "Garen J. Torikian <gjtorikian@gmail.com>",
   "description": "An implementation of GFM task lists",
   "main": "lib/index.js",
