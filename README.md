@@ -19,8 +19,7 @@ var options = {};
 options.isFile = true;
 
 roaster("./markdown.md", options, function(err, contents) {
-	contents = taskLists(contents);
+	contents = taskLists(contents, { disabled: false });
     fs.writeFileSync("./markdown.html", contents, "utf8");
 });
 ```
-
